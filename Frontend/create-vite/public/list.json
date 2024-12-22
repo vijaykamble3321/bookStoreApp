@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Story book",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 0,
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 2,
+        "name": "motivation",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 10,
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 3,
+        "name": "music",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 20,
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 4,
+        "name": "Sports",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 30,
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 5,
+        "name": "Food",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 40,
+        "category": "free",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 6,
+        "name": "coding",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 45,
+        "category": "code",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 7,
+        "name": "Dictionary",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 50,
+        "category": "dict",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 8,
+        "name": "movie",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 55,
+        "category": "movies",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 9,
+        "name": "animal",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 60,
+        "category": "animal",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 10,
+        "name": "home",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 66,
+        "category": "home",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    },
+    {
+        "id": 11,
+        "name": "software",
+        "title": "Today a reader, tomorrow a leader",
+        "price": 90,
+        "category": "coding",
+        "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1734687909~exp=1734691509~hmac=ae8642fa8097c807623e88f4d8e12c668123399be1ddd4a12c7b88a95e5bcf65&w=740"
+    }
+]
