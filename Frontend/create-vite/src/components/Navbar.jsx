@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Login from "./Login";
+import Logout from "./logout";
+import { useAuth } from "../context/AuthProvider";
 
 function Navbar() {
+    const { authUser, login, logout } = useAuth();// Destructuring authUser from useAuth hook
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -9,6 +12,7 @@ function Navbar() {
 
   const element = document.documentElement;
 
+  // Manage theme change
   useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");
@@ -21,6 +25,7 @@ function Navbar() {
     }
   }, [theme]);
 
+  // Sticky navbar on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -41,7 +46,7 @@ function Navbar() {
         <a href="/">HOME</a>
       </li>
       <li>
-        <a href="/cource">Course</a>
+        <a href="/course">Course</a>
       </li>
       <li>
         <a href="#contact">Contact</a>
@@ -129,15 +134,19 @@ function Navbar() {
               </svg>
             )}
           </button>
-          <div>
-            <a
-              className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
-              onClick={() => document.getElementById("my_modal_3").showModal()}
-            >
-              LOGIN
-            </a>
-            <Login />
-          </div>
+          {authUser ? (
+            <Logout />
+          ) : (
+            <>
+              <a
+                className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
+                onClick={() => document.getElementById("my_modal_3").showModal()}
+              >
+                LOGIN
+              </a>
+              <Login />
+            </>
+          )}
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useForm } from "react-hook-form";
+import { useForm } from 'react-hook-form';
 
 function Login() {
   const {
@@ -26,7 +26,7 @@ function Login() {
   return (
     <div>
       {/* Button to open the modal */}
-     
+      
 
       {/* Modal */}
       <dialog id="my_modal_3" className="modal">
@@ -50,9 +50,11 @@ function Login() {
                 type="email"
                 placeholder="Enter your Email"
                 className="w-80 px-3 border rounded-md outline-none"
-                {...register("email", { required: true })}
+                {...register('email', { required: 'Email is required' })}
               />
-              {errors.email && <span className="text-red-500">This field is required</span>}
+              {errors.email && (
+                <span className="text-red-500">{errors.email.message}</span>
+              )}
             </div>
 
             <div className="mt-4 space-y-2">
@@ -62,9 +64,11 @@ function Login() {
                 type="password"
                 placeholder="Enter your Password"
                 className="w-80 px-3 border rounded-md outline-none"
-                {...register("password", { required: true })}
+                {...register('password', { required: 'Password is required' })}
               />
-              {errors.password && <span className="text-red-500">This field is required</span>}
+              {errors.password && (
+                <span className="text-red-500">{errors.password.message}</span>
+              )}
             </div>
 
             {/* Login button */}
@@ -77,10 +81,13 @@ function Login() {
               </button>
 
               <p>
-                Not Reg?{" "}
-                <Link to="/signup" className="underline text-red-600 cursor-pointer">
+                Not Reg?{' '}
+                <Link
+                  to="/signup"
+                  className="underline text-red-600 cursor-pointer"
+                >
                   Signup!!
-                </Link>{" "}
+                </Link>{' '}
               </p>
             </div>
           </form>

@@ -1,14 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import Cards from './Cards';
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Cource() {
-  const [list, setList] = useState([]);
+  const [book, setBook] = useState([]); // Fixed typo: useState instead of usState
 
   useEffect(() => {
-    fetch('/list.json')  // Fetch JSON from the public folder
-      .then(response => response.json())
-      .then(data => setList(data));
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:4001/book");
+        console.log(res.data);
+        setBook(res.data); // Fixed incorrect assignment
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBook();
+  }, []);
+
+  const [list, setList] = useState([]); // Unrelated second useState example
+
+  useEffect(() => {
+    fetch('/list.json') // Fetch JSON from the public folder
+      .then((response) => response.json())
+      .then((data) => setList(data));
   }, []);
 
   return (
@@ -28,7 +44,7 @@ function Cource() {
           </Link>
         </div>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-6">
-          {list.map((item) => (
+          {book.map((item) => (
             <Cards key={item.id} item={item} />
           ))}
         </div>
